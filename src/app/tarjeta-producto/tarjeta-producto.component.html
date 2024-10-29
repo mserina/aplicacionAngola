@@ -1,0 +1,16 @@
+<div class="tarjeta">
+    <h2>{{tituloProducto}}</h2>
+    <p>{{precio}}</p>
+    <p>{{mensaje}}</p>
+
+    <!--llama al mentodo saludo2 cuando pulsa el boton-->
+    <button (click)="saludo2()">PULSA</button>
+
+    <!--Sirve para cambiar el valor de la variable/propiedad que hallamos puesto como valor (a la derecha)-->
+    <input type="number" [(ngModel)]="precio">
+   
+    <!--Enlazar un boton a un metodo-->
+    <button (click)="descuento()">Aplicar descuento</button>
+
+    <button (click)="restablecer()">Restablecer precio</button>
+</div>
